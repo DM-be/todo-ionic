@@ -1,8 +1,10 @@
 export class Todo {
 
-    constructor(public title, public description){
-// this.title = title, 
-// this.description = descriptions
+    title: string
+    description: string
+    constructor(title, description){
+     this.title = title;
+     this.description = description;
     
 
 
