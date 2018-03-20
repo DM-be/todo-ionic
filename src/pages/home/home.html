@@ -15,9 +15,11 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item *ngFor="let item of items"
-    (click)="viewItem(item)">
-    {{item.title}}
+    <ion-item *ngFor="let todo of todos"
+    (click)="viewItem(todo)">
+    {{todo.title}}
+   
+
   </ion-item>
 
   </ion-list>
