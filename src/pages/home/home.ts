@@ -5,6 +5,7 @@ import { NavController } from 'ionic-angular';
 
 import { AddItemPage } from '../add-item/add-item';
 import { ModalController } from 'ionic-angular/components/modal/modal-controller';
+import { ItemDetailPage } from '../item-detail/item-detail';
 
 
 @Component({
@@ -38,6 +39,9 @@ export class HomePage {
   }
 
   viewItem(todo) {
+    this.navCtrl.push(ItemDetailPage, {
+      todo
+    })
 
   }
 

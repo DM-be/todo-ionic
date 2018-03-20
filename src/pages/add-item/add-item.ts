@@ -1,8 +1,6 @@
 import { Todo } from '../../model/todo';
-
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
 import { ViewController } from 'ionic-angular/navigation/view-controller';
 
 /**
@@ -28,14 +26,11 @@ export class AddItemPage {
   }
 
   ionViewDidLoad() {
-    
-    console.log('ionViewDidLoad AddItemPage');
   }
 
   saveItem() {
     let newTodo = new Todo(this.title, this.description);
-    this.view.dismiss(newTodo);
-
+    this.view.dismiss(newTodo); // or use a service...
   }
 
   close() {
